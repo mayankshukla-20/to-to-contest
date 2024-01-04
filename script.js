@@ -7,6 +7,8 @@ const cardsContainer = document.querySelector(".cards");
 
 const highPriorityCount = document.getElementById("hp-span")
 const todoCount = document.getElementById("todo-span");
+const completedTaskCount = document.getElementById("completed-span")
+let compct = 0;
 let tdct = 0;
 
 
@@ -23,6 +25,9 @@ function deleteCard(event){
     tdct--;
   }
   cardToDelete.remove();
+  compct = completedTaskCount.innerText;
+  compct++;
+  completedTaskCount.innerText = compct;
   highPriorityCount.innerText = hpct;
   todoCount.innerText = tdct;
   
