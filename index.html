@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="./media/logo.svg" alt="logo" />
+      <div><span id="to">to</span><span id="do">do</span></div>
+    </nav>
+
+    <section id="content">
+      <div class="main">
+        <div class="inputTask">
+          <input
+            type="text"
+            name="toInput"
+            id="todoInput"
+            placeholder="Enter Your To-Do List Task"
+          />
+          <select id="priority" required>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+        </select>
+        <input type="date" name="duedate" id="duedate" required>
+          <button onclick="onSubmitForm()" id="add-button">
+            Add <img src="./media/plus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="count">
+          <h3 class="todo">To Do <span id="todo-span">0</span></h3>
+          <h3 class="highPriority">
+            High Priority <span id="hp-span">0</span>
+          </h3>
+        </div>
+        <div class="cards">
+          <!-- <div class="card">
+            <div class="checkboxx">
+              <input type="checkbox" name="circle" id="circle"  onchange="changed()"/>
+              <label for="circle" class="material-icons">radio_button_unchecked</label>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rerum
+              reiciendis accusantium possimus, atque sint?
+            </p>
+            <p>High</P>
+            <button><img src="./media/Layer 2.svg" alt=""></button>
+          </div> -->
+        </div>
+
+        <div class="icon">
+          <img src="./media/clipboard.png" alt="" />
+          <h1>You have no To-do Items As of now</h1>
+        </div>
+
+        <div class="started">
+          <h3 class="startedCount">Started <span id="started-span">0</span></h3>
+          <h3 class="highPriority">
+            High Priority <span id="hP2-span">0</span>
+          </h3>
+        </div>
+
+        <div class="completed">
+          <h3 class="compCount">
+            Completed <span id="completed-span">0</span>
+          </h3>
+          <h3 class="highPriority">
+            High Priority <span id="hP3-span">0</span>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 15vh;
+  position: relative;
+}
+#to {
+  color: var(--Blue, #4ea8de);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 900;
+}
+#do {
+  color: var(--PurpleDark, #5e60ce);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 900;
+}
+section {
+  background-color: #262626;
+  height: 85vh;
+}
+.inputTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  z-index: 50;
+  position: absolute;
+  top: 85px;
+  left: 350px;
+  width: 60vw;
+}
+.inputTask > input {
+  width: 45vw;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-700, #0d0d0d);
+  background: var(--Gray-500, #262626);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  /* flex: 1 0 0; */
+}
+.inputTask > button {
+  border-radius: 8px;
+  background: var(--Blue-Dark, #1e6f9f);
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count , .started, .completed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+}
+.todo{
+    color: var(--Blue, #4EA8DE);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+}
+.highPriority, .startedCount, .compCount{
+    color: var(--Purple, #8284FA);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+}
+.main{
+    width: 50vw;
+    margin: auto;
+}
+#todo-span, #hp-span, #started-span, #hP2-span, #completed-span, #hP3-span{
+    border-radius: 999px;
+background: var(--Gray-400, #333);
+/* display: flex; */
+padding: 2px 8px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+}
+.icon>img{
+    padding-top: 64px;
+}
+.icon>h1{
+    color: var(--Gray-300, #808080);
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 140%; /* 22.4px */
+align-self: stretch;
+}
+.started, .completed{
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--Grey-400, #333);;
+}
+.card{
+  width: 100%;
+    display: flex;
+    border-radius: 8px;
+border: 1px solid var(--Gray-400, #333);
+background: var(--Gray-500, #262626);
+box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+padding: 16px;
+align-items: center;
+justify-content: space-between;
+margin-top: 15px;
+gap: 12px;
+align-self: stretch;
+color: white;
+}
+.card>button{
+    background-color: var(--Gray-500, #262626);
+width: 24px;
+display: flex;
+height: 24px;
+padding: 5px 5.522px 5px 6px;
+justify-content: center;
+align-items: center;
+}
+input[type="checkbox"], input[type="radio"] {
+  display: none; */
+};
+
+input:checked + label { 
+  background-color: #060d18;
+}
+#priority{
+  border-radius: 8px;
+  border: 1px solid var(--Gray-700, #0d0d0d);
+  background: var(--Gray-500, #262626);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+}
+#duedate{
+  width: 10%;
+}
